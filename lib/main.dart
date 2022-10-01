@@ -197,8 +197,14 @@ class _MyWidgetState extends State<MyWidget> {
                               );
                             }),
                       ),
-                      title: Text("Add quantity"),
+                      title: Text("Cart"),
                       actions: [
+                        TextButton(
+                          child: Text("Empty cart"),
+                          onPressed: () {
+                            cart.clear();
+                          },
+                        ),
                         TextButton(
                           child: Text("Close"),
                           onPressed: () {
