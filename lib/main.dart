@@ -203,6 +203,7 @@ class _MyWidgetState extends State<MyWidget> {
                           child: Text("Empty cart"),
                           onPressed: () {
                             cart.clear();
+                            Navigator.pop(context);
                           },
                         ),
                         TextButton(
